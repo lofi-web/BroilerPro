@@ -6,17 +6,17 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '')
 
   return {
+    plugins: [react()],
+
     server: {
-      port: 3000,
       host: '0.0.0.0',
+      port: 3000,
     },
 
     preview: {
       host: '0.0.0.0',
-      allowedHosts: 'all'
+      allowedHosts: ['broilerpro.onrender.com']
     },
-
-    plugins: [react()],
 
     define: {
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
