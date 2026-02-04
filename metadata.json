@@ -1,0 +1,5 @@
+{
+  "name": "খামারবন্ধু (BroilerPro) - Farm Management System",
+  "description": "A comprehensive broiler farm management application to track batches, mortality, feed, expenses, and income with local storage and AI insights.",
+  "requestFramePermissions": []
+}
